@@ -134,3 +134,10 @@ form .text h3 a:hover {
     color: rgb(1, 255, 200);
 }
 
+
+@media screen and (max-width: 375px) {
+    .wrapper {
+      width: 330px;
+    }
+  }
+  
