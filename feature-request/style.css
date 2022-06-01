@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: #dbfffa;
+}
+
+.wrapper {
+    position: relative;
+    max-width: auto;
+    max-height: auto;
+    background: #fff;
+    padding: 34px;
+    border-radius: 6px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.wrapper h2{
+    position: relative;
+    font-size: 22px;
+    font-weight: 600;
+    color: #333;
+}
+
+.wrapper h2::before{
+   content: '';
+   position: absolute;
+   left: 0;
+   bottom: 0;
+   height: 3px;
+   width: 28px;
+   border-radius: 12px;
+   background: #1699a5;
+}
+
+.wrapper form {
+    margin-top: 30px;
+}
+
+.wrapper form .input-box {
+    height: 52px;
+    margin: 18px 0;
+}
+
+textarea {
+    height: fit-content;
+    min-height: 1rem;
+    /* background: red; */
+}
+
+form .input-box input, textarea {
+    height: 100%;
+    width: 100%;
+    outline: none;
+    padding: 0 15px;
+    font-size: 17px;
+    font-weight: 400;
+    color: #333;
+    border: 1.5px solid #c7bebe;
+    border-bottom-width: 2.5px;
+    border-radius: 6px;
+    transition: all 0.3s ease;
+}
+
+.input-box input:focus, .input-box input:valid {
+    border-color: #4070f4;
+}
+
+form .policy {
+    display: flex;
+    align-items: center;
+}
+
+form  h3 {
+    color: #707070;
+    font-size: 14px;
+    font-weight: 500;
+    margin-left: 10px;
+}
+
+.input-box.button input {
+    color: #fff;
+    letter-spacing: 1px;
+    border: none;
+    background: #15afd5;
+    cursor: pointer;
+}
+
+.input-box.button input:hover {
+    background: #0f93a2;
+}
+
+form .text h3 {
+    color: #333;
+    width: 100%;
+    text-align: center;
+}
+
+form .text h3 a {
+    text-decoration: none;
+    color: #4070f4;
+}
+
+form .text h3 a:hover {
+    text-decoration: underline;
+}
+
+.policy input {
+    cursor: pointer;
+}
+
+.credit{
+    margin-top: 2rem;
+}
+
+.credit h4 {
+    color: rgb(56, 172, 183);
+    font-size: 14px;
+    font-weight: 600;
+}
+
+
+.credit h4 a {
+    text-decoration: none;
+    color: rgb(12, 85, 85);
+}
+
+.credit h4 a:hover {
+    text-decoration: underline;
+    color: rgb(38, 127, 191);
+}
+
+
+@media screen and (max-width: 375px) {
+    .wrapper {
+      width: 300px;
+    }
+  }
+  
